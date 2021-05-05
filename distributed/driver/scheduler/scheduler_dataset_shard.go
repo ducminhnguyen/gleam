@@ -3,9 +3,9 @@ package scheduler
 import (
 	"sync"
 
-	"github.com/chrislusf/gleam/distributed/plan"
-	"github.com/chrislusf/gleam/flow"
-	"github.com/chrislusf/gleam/pb"
+	"github.com/ducminhnguyen/gleam/distributed/plan"
+	"github.com/ducminhnguyen/gleam/flow"
+	"github.com/ducminhnguyen/gleam/pb"
 )
 
 func (s *Scheduler) DeleteOutput(taskGroup *plan.TaskGroup) {

@@ -25,11 +25,11 @@ import (
 	"time"
 
 	"github.com/juju/errors"
-	"github.com/chrislusf/gleam/sql/ast"
-	"github.com/chrislusf/gleam/sql/context"
-	"github.com/chrislusf/gleam/sql/mysql"
-	"github.com/chrislusf/gleam/sql/sessionctx/variable"
-	"github.com/chrislusf/gleam/sql/util/types"
+	"github.com/ducminhnguyen/gleam/sql/ast"
+	"github.com/ducminhnguyen/gleam/sql/context"
+	"github.com/ducminhnguyen/gleam/sql/mysql"
+	"github.com/ducminhnguyen/gleam/sql/sessionctx/variable"
+	"github.com/ducminhnguyen/gleam/sql/util/types"
 )
 
 var (

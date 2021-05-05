@@ -17,8 +17,8 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/chrislusf/gleam/sql/util/charset"
-	"github.com/chrislusf/gleam/sql/util/hack"
+	"github.com/ducminhnguyen/gleam/sql/util/charset"
+	"github.com/ducminhnguyen/gleam/sql/util/hack"
 )
 
 func isLetter(ch rune) bool {

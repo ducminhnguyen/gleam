@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chrislusf/gleam/gio"
+	"github.com/ducminhnguyen/gleam/gio"
 	"github.com/gocql/gocql"
 )
 

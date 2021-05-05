@@ -5,8 +5,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/chrislusf/gleam/pb"
-	"github.com/chrislusf/gleam/util"
+	"github.com/ducminhnguyen/gleam/pb"
+	"github.com/ducminhnguyen/gleam/util"
 )
 
 func toInts(indexes []int32) []int {

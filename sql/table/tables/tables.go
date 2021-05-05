@@ -18,8 +18,8 @@
 package tables
 
 import (
-	"github.com/chrislusf/gleam/sql/model"
-	"github.com/chrislusf/gleam/sql/table"
+	"github.com/ducminhnguyen/gleam/sql/model"
+	"github.com/ducminhnguyen/gleam/sql/table"
 )
 
 var ()

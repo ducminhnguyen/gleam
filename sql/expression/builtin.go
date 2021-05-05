@@ -18,10 +18,10 @@
 package expression
 
 import (
-	"github.com/chrislusf/gleam/sql/ast"
-	"github.com/chrislusf/gleam/sql/context"
-	"github.com/chrislusf/gleam/sql/parser/opcode"
-	"github.com/chrislusf/gleam/sql/util/types"
+	"github.com/ducminhnguyen/gleam/sql/ast"
+	"github.com/ducminhnguyen/gleam/sql/context"
+	"github.com/ducminhnguyen/gleam/sql/parser/opcode"
+	"github.com/ducminhnguyen/gleam/sql/util/types"
 	"github.com/juju/errors"
 )
 

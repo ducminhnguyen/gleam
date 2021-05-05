@@ -8,9 +8,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/chrislusf/gleam/pb"
-	"github.com/chrislusf/gleam/script"
-	"github.com/chrislusf/gleam/util"
+	"github.com/ducminhnguyen/gleam/pb"
+	"github.com/ducminhnguyen/gleam/script"
+	"github.com/ducminhnguyen/gleam/util"
 )
 
 func init() {

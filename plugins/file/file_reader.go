@@ -7,14 +7,14 @@ import (
 	"io"
 	"path/filepath"
 
-	"github.com/chrislusf/gleam/filesystem"
-	"github.com/chrislusf/gleam/plugins/file/csv"
-	"github.com/chrislusf/gleam/plugins/file/orc"
-	"github.com/chrislusf/gleam/plugins/file/parquet"
-	"github.com/chrislusf/gleam/plugins/file/tsv"
-	"github.com/chrislusf/gleam/plugins/file/txt"
-	"github.com/chrislusf/gleam/plugins/file/zipfile"
-	"github.com/chrislusf/gleam/util"
+	"github.com/ducminhnguyen/gleam/filesystem"
+	"github.com/ducminhnguyen/gleam/plugins/file/csv"
+	"github.com/ducminhnguyen/gleam/plugins/file/orc"
+	"github.com/ducminhnguyen/gleam/plugins/file/parquet"
+	"github.com/ducminhnguyen/gleam/plugins/file/tsv"
+	"github.com/ducminhnguyen/gleam/plugins/file/txt"
+	"github.com/ducminhnguyen/gleam/plugins/file/zipfile"
+	"github.com/ducminhnguyen/gleam/util"
 	"github.com/klauspost/compress/zstd"
 )
 

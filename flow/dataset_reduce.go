@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/chrislusf/gleam/gio"
-	"github.com/chrislusf/gleam/script"
+	"github.com/ducminhnguyen/gleam/gio"
+	"github.com/ducminhnguyen/gleam/script"
 )
 
 // ReduceByKey runs the reducer registered to the reducerId,

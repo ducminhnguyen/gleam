@@ -14,13 +14,13 @@ import (
 
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	a "github.com/chrislusf/gleam/distributed/agent"
-	exe "github.com/chrislusf/gleam/distributed/executor"
-	m "github.com/chrislusf/gleam/distributed/master"
-	"github.com/chrislusf/gleam/distributed/netchan"
-	"github.com/chrislusf/gleam/pb"
-	"github.com/chrislusf/gleam/util"
-	"github.com/chrislusf/gleam/util/on_interrupt"
+	a "github.com/ducminhnguyen/gleam/distributed/agent"
+	exe "github.com/ducminhnguyen/gleam/distributed/executor"
+	m "github.com/ducminhnguyen/gleam/distributed/master"
+	"github.com/ducminhnguyen/gleam/distributed/netchan"
+	"github.com/ducminhnguyen/gleam/pb"
+	"github.com/ducminhnguyen/gleam/util"
+	"github.com/ducminhnguyen/gleam/util/on_interrupt"
 	"github.com/golang/protobuf/proto"
 )
 

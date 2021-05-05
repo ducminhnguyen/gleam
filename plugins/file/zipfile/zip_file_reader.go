@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/chrislusf/gleam/util"
+	"github.com/ducminhnguyen/gleam/util"
 )
 
 type FileReader struct {

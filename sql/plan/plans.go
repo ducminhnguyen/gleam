@@ -17,11 +17,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/chrislusf/gleam/sql/ast"
-	"github.com/chrislusf/gleam/sql/expression"
-	"github.com/chrislusf/gleam/sql/sessionctx/variable"
-	"github.com/chrislusf/gleam/sql/table"
-	"github.com/chrislusf/gleam/sql/util/types"
+	"github.com/ducminhnguyen/gleam/sql/ast"
+	"github.com/ducminhnguyen/gleam/sql/expression"
+	"github.com/ducminhnguyen/gleam/sql/sessionctx/variable"
+	"github.com/ducminhnguyen/gleam/sql/table"
+	"github.com/ducminhnguyen/gleam/sql/util/types"
 )
 
 // TableRange represents a range of row handle.

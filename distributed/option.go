@@ -3,9 +3,9 @@ package distributed
 import (
 	"path/filepath"
 
-	"github.com/chrislusf/gleam/distributed/driver"
-	"github.com/chrislusf/gleam/distributed/resource"
-	"github.com/chrislusf/gleam/flow"
+	"github.com/ducminhnguyen/gleam/distributed/driver"
+	"github.com/ducminhnguyen/gleam/distributed/resource"
+	"github.com/ducminhnguyen/gleam/flow"
 )
 
 type DistributedOption struct {

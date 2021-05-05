@@ -24,6 +24,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/juju/errors v0.0.0-20200330140219-3fe23663418f
+	github.com/juju/testing v0.0.0-20210324180055-18c50b0c2098 // indirect
 	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0
 	github.com/klauspost/compress v1.12.2
 	github.com/philhofer/fwd v1.1.1 // indirect

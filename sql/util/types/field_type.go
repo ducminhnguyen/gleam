@@ -17,8 +17,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/chrislusf/gleam/sql/mysql"
-	"github.com/chrislusf/gleam/sql/util/charset"
+	"github.com/ducminhnguyen/gleam/sql/mysql"
+	"github.com/ducminhnguyen/gleam/sql/util/charset"
 )
 
 // UnspecifiedLength is unspecified length.
