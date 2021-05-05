@@ -3,9 +3,9 @@ package parquet
 import (
 	"github.com/chrislusf/gleam/filesystem"
 	"github.com/chrislusf/gleam/util"
-	. "github.com/xitongsys/parquet-go/source"
-	. "github.com/xitongsys/parquet-go/reader"
-	. "github.com/xitongsys/parquet-go/types"
+	"github.com/xitongsys/parquet-go/source"
+	"github.com/xitongsys/parquet-go/reader"
+	"github.com/xitongsys/parquet-go/types"
 	"io"
 )
 
@@ -14,11 +14,11 @@ type PqFile struct {
 	VF       filesystem.VirtualFile
 }
 
-func (self *PqFile) Create(name string) (ParquetFile, error) {
+func (self *PqFile) Create(name string) (source.ParquetFile, error) {
 	return nil, nil
 }
 
-func (self *PqFile) Open(name string) (ParquetFile, error) {
+func (self *PqFile) Open(name string) (source.ParquetFile, error) {
 	if name == "" {
 		name = self.FileName
 	}
@@ -44,16 +44,16 @@ func (self *PqFile) Write(b []byte) (n int, err error) {
 func (self *PqFile) Close() error { return nil }
 
 type ParquetFileReader struct {
-	pqReader *ParquetReader
+	pqReader *reader.ParquetReader
 	NumRows  int
 	Cursor   int
 }
 
-func New(reader filesystem.VirtualFile, fileName string) *ParquetFileReader {
+func New(readerx filesystem.VirtualFile, fileName string) *ParquetFileReader {
 	parquetFileReader := new(ParquetFileReader)
-	var pqFile ParquetFile = &PqFile{}
+	var pqFile source.ParquetFile = &PqFile{}
 	pqFile, _ = pqFile.Open(fileName)
-	parquetFileReader.pqReader, _ = NewParquetColumnReader(pqFile, 1)
+	parquetFileReader.pqReader, _ = reader.NewParquetColumnReader(pqFile, 1)
 	parquetFileReader.NumRows = int(parquetFileReader.pqReader.GetNumRows())
 	return parquetFileReader
 }
@@ -70,7 +70,7 @@ func (self *ParquetFileReader) Read() (row *util.Row, err error) {
 	for _, fieldName := range self.pqReader.SchemaHandler.ValueColumns {
 		schemaIndex := self.pqReader.SchemaHandler.MapIndex[fieldName]
 		values, _, _, _ := self.pqReader.ReadColumnByPath(fieldName, 1)
-		objects = append(objects, ParquetTypeToGoType(values[0],
+		objects = append(objects, types.ParquetTypeToGoType(values[0],
 			self.pqReader.SchemaHandler.SchemaElements[schemaIndex].Type,
 			self.pqReader.SchemaHandler.SchemaElements[schemaIndex].ConvertedType,
 		))
