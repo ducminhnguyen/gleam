@@ -1,4 +1,4 @@
-module github.com/chrislusf/gleam
+module github.com/ducminhnguyen/gleam
 
 go 1.13
 
